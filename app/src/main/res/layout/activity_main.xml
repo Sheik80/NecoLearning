@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edValue"
         app:layout_constraintTop_toBottomOf="@+id/edValue"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,7 +38,7 @@
         android:id="@+id/edValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Кол-во подписчиков"
         android:inputType="number"
@@ -69,21 +69,31 @@
         android:layout_marginBottom="24dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edValue"
-        app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintEnd_toEndOf="@+id/edPass"
+        app:layout_constraintStart_toStartOf="@+id/edPass"
         app:layout_constraintTop_toBottomOf="@+id/tvResult" />
 
     <EditText
         android:id="@+id/edPass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Введите пароль"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edName"
         app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <ImageView
+        android:id="@+id/faceid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/edName"
+        app:layout_constraintEnd_toEndOf="@+id/edValue"
+        app:layout_constraintStart_toStartOf="@+id/edValue"
+        app:layout_constraintTop_toBottomOf="@+id/edValue"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

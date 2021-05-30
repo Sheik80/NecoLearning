@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
                     //Добавляем проверку на совпадение пароля
                     if (dataBinding.edPass.text.toString() == Constance.DIRECTOR_PASSWORD) {
-
+                        dataBinding.faceid.setImageResource(R.drawable.alex)
                         dataBinding.tvResult.text = tempSalary
                     } else{
                         dataBinding.tvResult.text = "Password wrong"
